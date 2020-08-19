@@ -1,0 +1,61 @@
+﻿
+#maincontainer #menu
+{
+    float:left;
+    width:190px;
+    margin-right:10px;
+}
+
+#maincontainer #menu .member_border
+{
+    border: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+#maincontainer #menu .member_title
+{
+    background-image: url(../images/left-bg1.gif);
+    color: #555656;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#maincontainer #menu .menu_nav ul
+{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#maincontainer #menu .menu_nav ul li
+{
+    background: transparent url(../images/left-bg2.gif) no-repeat scroll left center;
+    line-height: 25px;
+    margin-left: 26px;
+    padding-left: 12px;
+    text-align: left;
+}
+
+#maincontainer #menu .quita
+{
+     text-align:center;
+}
+
+#maincontainer #operate
+{
+    float:right;
+    width:776px;
+    border: 1px solid #CCCCCC;
+}
+
+#maincontainer #operate iframe
+{
+    height:550px;
+    width:776px;
+}

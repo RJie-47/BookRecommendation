@@ -1,0 +1,82 @@
+﻿.clr
+{
+    clear:both;
+}
+#maincontainer
+{
+    border:1px solid #CFCFCF;
+}
+#maincontainer #cat_title
+{
+    width: 980px;
+    background: transparent url(../images/search_bg.gif) repeat-x scroll 0 0;
+    height: 28px;
+    
+}
+
+#maincontainer #cat_title h2
+{
+    color:#666686;
+    font-size:14px;
+padding-left:12px;
+padding-top:5px;
+background:transparent url(../images/bg_tit.gif) no-repeat scroll -23px -269px;
+}
+
+#maincontainer .mc
+{
+    padding:5px 20px;
+    overflow:hidden;
+}
+
+#maincontainer .mc dl
+{
+    line-height: 24px;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+#maincontainer .mc dl dt
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 12px;
+    position: relative;
+}
+
+#maincontainer .mc dl dt span
+{
+    color:#666666;
+}
+
+#maincontainer .mc dl dt b
+{
+    background: transparent url(../images/bg_tit.gif) no-repeat scroll -29px -306px;
+    display: block;
+    height: 14px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    width: 4px;
+}
+
+#maincontainer .mc dl dd em
+{
+    float:left;
+    font-style:normal;
+}
+
+#maincontainer .mc dl dd a:link,#maincontainer .mc dl dd a:visited
+{
+    color:#666666;
+    text-decoration:none;
+
+}
+
+#maincontainer .mc dl dd a
+{
+    margin-right:16px;
+white-space:nowrap;
+}

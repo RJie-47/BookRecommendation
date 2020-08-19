@@ -1,0 +1,989 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/master2.master" AutoEventWireup="true" CodeFile="news.aspx.cs" Inherits="news" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Content5" Runat="Server">
+    <link href="css/news.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="WriteContent" Runat="Server">
+    <body>
+   
+        <div id="wrapper">
+            <div id="header">
+                <div id="headerl">
+                    <a href="index.html"><img src="images/logo.png" alt="淘书屋" /></a>
+                </div>
+                <div id="headerr">
+                    <div id="headnav">
+                        <ul>
+                            <li>
+                                <a href="#">帮助</a>
+                            </li>
+                            <li>
+                                <a href="register.html">注册</a>
+                            </li>
+                            <li>
+                                <a href="login.html">登录</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="searchbox">
+                        <input type="text" size="40" class="searchtext" />
+                        <input type="image" src="images/searchbtn.gif" />
+                        <input type="image" src="images/adsearchbtn.gif" />
+                    </div>
+                </div>
+            </div>
+            <div id="navigation">
+                <div id="navleft">
+                    <img src="images/menu_left.gif" alt="left" />
+                </div>
+                <div id="navcontent">
+                    <a class="nav" href="index.html">首页</a> │
+					<a class="nav" href="searchresult.html">全部图书</a> │
+					<a class="nav" href="bookcat.html">图书分类</a> │
+					<a class="nav" href="myaccount.html">我的帐户</a> │
+					<a class="nav" href="cart.html">购物车</a>│
+					<a class="nav" href="#">帮助中心</a> │
+					<a class="nav" href="#">联系我们</a>
+                </div>
+                <div id="navright">
+                    <img src="images/menu_right.gif" alt="right" />
+                </div>
+            </div>
+            <div id="maincontainer">
+                
+    
+	<div id="left">
+					<div id="bookcat">
+						<div id="catitle">
+							<h2>
+                            图书分类</h2>
+						</div>
+						<div id="categories">
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·英文原版书</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·小说</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·文学</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·青春文学</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·传记</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·艺术</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·少儿</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·金融与投资</a>
+                               
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·管理</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·励志与成功</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·生活</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·健身与保健</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·家庭与育儿</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·旅游</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·动漫/幽默</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·历史</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·哲学</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·国学</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·政治/军事</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·法律</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·宗教</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·心理学</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="catitem">
+								<h3>
+                                <b>&gt;</b><a href="#">·文化</a>
+                            </h3>
+								<div class="catchilditem">
+									<ul>
+										<li>
+											<a href="searchresult.html?cat=01">小说 Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">传记 Biographies & Memoirs</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">艺术 Art</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">摄影 Photography</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">旅游与地理 Travel Guide</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">经管类 Business</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">人文社科 Non Fiction</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">儿童书 Children's book</a>
+										</li>
+										<li>
+											<a href="searchresult.html?cat=01">其他原版书</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div id="extra">
+								<a href="bookcat.html">全部图书分类&gt;&gt;</a>
+							</div>
+						</div>
+					</div>
+					<div id="advertise">
+						<img src="images/telhelp.gif" alt="telhelp" />
+					</div>
+				</div>
+
+    <div id="content">
+        
+          <div id="detail">
+                    <div class="mt">
+                        <h1>
+                            写书评赢ipad2！数量有限！</h1>
+                        <div class="extra">
+                        </div>
+                        <div class="date">
+                            时间：2011-8-5 10:30:53
+                        </div>
+                    </div>
+                    <div class="mc">
+                        <p>
+                            玩转幸运在指间，书评抢楼赢ipod活动开始啦！</p>
+                        <br/>
+                        <p>
+                            凡购买淘书屋独家发售小布什唯一亲笔自传《抉择时刻》（精装本）的用户，完成订单并发表书评抢得指定楼层，即第18、48、78、108、138、168、198、228、258、288、318、348、378、408、438楼发表书评的用户，可获赠价值iPad2
+                            一台（颜色随机）。限量15台，赠完为止，先抢先得！</p>
+                        <br/>
+                        <p>
+                            好书抢先读，好礼等你来！</p>
+                        <br/>
+                        
+                        <br/>
+                        <p>
+                            祝大家购物愉快！</p>
+                        <br/>
+                        <p>
+                            &nbsp;</p>
+                    </div>
+                </div>
+            
+
+    </div>
+
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>地址：成都东软学院C2三楼 <span>|</span> 邮政编码:611844 <span>|</span> <span>电话：028-82878185</span><span>|</span> 版权所有：成都东软黄波老师
+                    </li>
+                    <li>Copyright 2011-2019 All Rights Reserved&nbsp; 川ICP备09073713号</li>
+                </ul>
+            </div>
+        </div>
+   
+     <script>
+			/*注:以下的代表只是在Demo中起演示作用,与实际项目是无关的*/
+			var btnSearch = document.querySelectorAll("#searchbox input")[1];
+			btnSearch.onclick = function(e) {
+				e.preventDefault = false;
+				location.href = "searchresult.html";
+			}
+			var btnAdvanceSearch = document.querySelectorAll("#searchbox input")[2];
+			btnAdvanceSearch.onclick = function() {
+				location.href = "advancesearch.html";
+			}
+		</script>
+    
+    
+
+
+</body>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+</asp:Content>
+

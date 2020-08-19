@@ -1,0 +1,7 @@
+G:\net\bookshop\BookShop\BookShopDAL\bin\Debug\BookShopDAL.dll.config
+G:\net\bookshop\BookShop\BookShopDAL\bin\Debug\BookShopDAL.dll
+G:\net\bookshop\BookShop\BookShopDAL\bin\Debug\BookShopDAL.pdb
+G:\net\bookshop\BookShop\BookShopDAL\obj\Debug\BookShopDAL.csprojAssemblyReference.cache
+G:\net\bookshop\BookShop\BookShopDAL\obj\Debug\BookShopDAL.csproj.CoreCompileInputs.cache
+G:\net\bookshop\BookShop\BookShopDAL\obj\Debug\BookShopDAL.dll
+G:\net\bookshop\BookShop\BookShopDAL\obj\Debug\BookShopDAL.pdb

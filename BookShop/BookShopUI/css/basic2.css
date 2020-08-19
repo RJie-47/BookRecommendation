@@ -1,0 +1,150 @@
+﻿/*
+      Created by CSS Portal Layout Generator
+	  
+	  http://www.cssportal.com
+	  	  
+*/
+#left { 
+ color: #333;
+ width: 210px;
+ float: left;
+ margin-right:10px;
+}
+
+#left #bookcat
+{
+    margin-bottom:10px;
+    width:210px;
+    height:760px;
+    float:left;
+}
+
+#left #bookcat #catitle
+{
+    height: 24px;
+    line-height: 24px;
+    padding: 2px 8px;
+    background: url(../images/tbg.jpg) repeat-x scroll 0 0;
+    border:1px solid #ff7d28;
+}
+
+#left #bookcat #categories
+{
+    /*border-color: #ff7d28;*/
+    /*border-style: solid;
+    border-width: 0 1px 1px;*/
+    overflow: visible;
+    
+}
+#left #bookcat #categories .catitem
+{
+    position: relative;
+    z-index: 1000;
+    padding: 0;
+    border-left: 1px solid #ff7d28;
+    border-right: 1px solid #ff7d28;
+   
+}
+#left #bookcat #categories .catitem:hover{
+	border-right: none;
+}
+#left #bookcat #categories #extra{
+	 border-top: 1px solid #ff7d28;
+}
+
+#left #bookcat #categories .catitem:hover{
+	background-color: lightgoldenrodyellow;
+}
+
+#left #bookcat #categories .catitem:hover b{
+	background-color: lightgoldenrodyellow;
+}
+
+
+#left #bookcat #categories .catitem h3
+{
+   /* border-bottom: 1px solid #ff7d28;*/
+    height: 29px;
+    line-height: 29px;
+    padding: 0 7px;
+    font-size:14px;
+    position: relative;
+    left:6px;
+}
+
+#left #bookcat #categories .catitem h3 b
+{
+    background: #FFFFFF none repeat scroll 0 0;
+    color: #ff7d28;
+    height: 26px;
+    left: 186px;
+    overflow: hidden;
+    position: absolute;
+    width: 10px;
+    top:1.5px;
+    z-index: 2;
+}
+#left #bookcat #categories .catitem h3 a
+{
+    display: block;
+    left: 0;
+    padding: 1px 0;
+    position: absolute;
+    text-decoration: none;
+    top: -1px;
+    width: 180px;
+    z-index: 99;
+}
+
+#left #bookcat #categories .catitem .catchilditem
+{
+    background-color: #fff;
+    min-height: 180px;
+    width: 420px;
+    position: absolute;
+    left:208px;
+    top: -1px;
+    z-index: 90;
+    display: none;
+    border: 2px solid #ff7d28;
+  /*  border-left: none;*/
+    padding: 20px;
+
+}
+#left #bookcat #categories .catitem .catchilditem ul li{
+	 float: left;
+	 margin: 10px 10px;
+}
+#left #bookcat #categories .catitem .catchilditem ul li a:hover{
+	 color: #ff7d28;
+	 text-decoration: underline;
+}
+
+div.catitem:last-of-type{
+	background-color: yellow;
+}
+
+#left #bookcat #categories .catitem:hover .catchilditem
+{
+	display: block;
+}
+
+#left #bookcat #categories #extra
+{
+    padding:5px;
+}
+
+
+#left #advertise
+{
+    float:left;
+    width:210px;
+    border:1px solid #cfcfcf;
+}
+#left #advertise img
+{
+    margin: 30px 15px 3px 15px;
+}
+
+
+

@@ -1,0 +1,55 @@
+﻿#maincontainer #registertitle
+{
+    margin:0 auto;
+    text-align:center;
+}
+#maincontainer #registertitle img
+{
+    padding-top:15px
+}
+#maincontainer #registercontainer
+{
+    background-color: #F2F2F2;
+    border: 1px solid #E2E2E2;
+    height: 311px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    width: 980px;
+}
+
+#maincontainer #registercontainer #registercontent
+{
+    background-color: #FFFFFF;
+    height: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 40px 40px 40px;
+}
+#maincontainer #registercontainer #registercontent p
+{
+    margin-bottom:7px;
+}
+#maincontainer #registercontainer #registercontent p span
+{
+    float:left;
+    width:260px;
+    text-align:right;
+    font-size:14px;
+    
+}
+
+#maincontainer #registercontainer #registercontent p input
+{
+    height: 16px;
+    padding: 4px 3px;
+    width: 240px;
+    border:1px solid #BBBBBB;
+    margin-left:20px;
+    margin-top:-5px;
+   
+}
+
+#maincontainer #registercontainer #registercontent .btnpos
+{
+    margin-left:70px;
+}

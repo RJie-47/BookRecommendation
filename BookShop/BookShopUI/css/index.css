@@ -1,0 +1,210 @@
+﻿#maincontainer #content #report {
+	float: left;
+	color: #333;
+	height: 164px;
+	width: 204px;
+	display: inline;
+	border: 1px solid #cfcfcf;
+}
+
+#maincontainer #content #report #retitle {
+	height: 32px;
+	background: url(../images/search_bg.gif) repeat-x scroll 0 0;
+}
+
+#maincontainer #content #report #retitle h2 {
+	padding-left: 12px;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+#maincontainer #content #report #recontent ul {
+	padding: 6px 5px;
+}
+
+#maincontainer #content #report #recontent ul li {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+#maincontainer #content #newbook {
+	width: 760px;
+	height: 25px;
+	clear: both;
+	border: 1px solid #cfcfcf;
+	height: 200px;
+}
+
+#maincontainer #content #newbook #newtitle {
+	height: 8.5px;
+	border-bottom: 1px solid #CFCFCF;
+	color: #289703;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	background: url(../images/search_bg.gif) repeat-x scroll 0 0;
+}
+
+#maincontainer #content #newbook #newextra {
+	float: right;
+	margin-right: 10px;
+	margin-top: -18px;
+}
+
+#maincontainer #content #slide {
+	color: #333;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#maincontainer #content #sellwell {
+	width: 760px;
+	clear: both;
+	height: 480px;
+	margin-top: 10px;
+	border: 1px solid #cfcfcf;
+}
+
+#maincontainer #content #sellwell #swtitle {
+	height: 8.5px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	color: #0099FF;
+	border-bottom: 1px solid #cfcfcf;
+	margin-bottom: 10px;
+	background: url(../images/search_bg.gif) repeat-x scroll 0 0;
+}
+
+#maincontainer #content #sellwell #swtitle #swextra {
+	float: right;
+	margin-top: -18px;
+	margin-right: 10px;
+}
+
+#maincontainer #content #sellwell #swcontent {
+	padding: 0 3px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	width: 135px;
+	float: left;
+	margin-right: -12px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .bookimg {
+	background: transparent url(../images/book_shadow.jpg) no-repeat scroll 0 120px;
+	height: 134px;
+	margin: 0 auto 8px;
+	overflow: hidden;
+	padding: 0 10px;
+	width: 98px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .bookimg .i-img {
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #CCCCCC;
+	height: 130px;
+	overflow: hidden;
+	padding: 1px;
+	width: 94px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .bookimg .i-img a:link,
+#maincontainer #content #sellwell #swcontent ul li .bookimg .i-img a:visited {
+	display: block;
+	height: 130px;
+	overflow: hidden;
+	width: 94px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .bookimg img {
+	margin-left: -18px;
+	width: 130px;
+	height: 130px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .p-name,
+#maincontainer #content #sellwell #swcontent ul li .p-market {
+	padding: 0 2px 0 18px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .p-market del {
+	color: #999999;
+	margin-right: 10px;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .p-price {
+	color: #EF0000;
+	font-weight: bold;
+	padding: 0 2px 0 18px;
+	font-family: Verdana;
+}
+
+#maincontainer #content #sellwell #swcontent ul li .p-price strong {
+	color: #EF0000;
+}
+
+#slide {
+	width: 542px;
+	height: 164px;
+	/*其实就是图片的高度*/
+	border: 1px #eeeeee solid;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+	/*此处需要将溢出框架的图片部分隐藏*/
+}
+
+#slide ul {
+	width: 4000px;
+	position: relative;
+	list-style: none;
+	/*此处需注意relative : 对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置，如果没有这个属性，图片将不可左右移动*/
+}
+
+#slide ul li img {
+	width: 544px;
+	height: 164px;
+}
+
+#slide ul li {
+	float: left;
+	/*让四张图片左浮动，形成并排的横着布局，方便点击按钮时的左移动*/
+	width: 544px;
+}
+
+#slide .showNav {
+	/*用绝对定位给数字按钮进行布局*/
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#slide .showNav span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ff5a28;
+	margin-left: 2px;
+	color: #fff;
+}
+
+#slide .showNav .active {
+	background: #b63e1a;
+}
+
+div.p-name{
+	height: 32px;
+	overflow: hidden;
+}

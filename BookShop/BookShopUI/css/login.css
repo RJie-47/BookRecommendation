@@ -1,0 +1,80 @@
+﻿
+#maincontainer #logintitle
+{
+    padding-top:15px;
+    margin:0 auto;
+    text-align:center;
+}
+#maincontainer #logintitle img
+{
+    padding-top:15px;
+}
+#maincontainer #logincontent
+{
+    background-color: #F2F2F2;
+    border: 1px solid #E2E2E2;
+    height: 311px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    width: 980px;
+}
+#maincontainer #logincontent #loginc
+{
+    background-color: #FFFFFF;
+    float: left;
+    height: 311px;
+    margin-left: 15px;
+    width: 570px;
+}
+#maincontainer #logincontent #loginc #loginc_content
+{
+     padding:40px;
+}
+#maincontainer #logincontent #loginc #loginc_content .loginitem
+{
+    height: 50px;
+    line-height: 26px;
+    padding-top: 5px;
+    margin-bottom:-20px;
+}
+#maincontainer #logincontent #loginc #loginc_content .loginitem input
+{
+    margin-left:5px;
+}
+
+#maincontainer #logincontent #loginc #loginc_content .loginitem .loginlabel
+{
+    color:#009900;
+    font-weight:bold;
+    padding-left:11px;
+    float:left;
+    width:80px;
+    
+}
+#maincontainer #logincontent #loginc #loginc_content .loginitem .loginfl
+{
+    float:left;
+}
+#maincontainer #logincontent #loginc #loginc_content .loginitem input
+{
+    height:18px;
+    width:160px;
+}
+
+#maincontainer #logincontent #loginm
+{
+    float:left;
+}
+#maincontainer #logincontent #loginr
+{
+    color: #000000;
+    float: left;
+    line-height: 25px;
+    padding: 40px;
+    text-align: left;
+}
+
+#maincontainer #logincontent #loginr span
+{
+    color: rgb(136, 136, 136);
+}

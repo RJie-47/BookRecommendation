@@ -1,0 +1,42 @@
+﻿body 
+{
+    font-size:12px;
+}
+.OperateTitle
+{
+    background: transparent url(../images/labelbg.gif) repeat scroll 0 0;
+    height: 36px;
+}
+
+.OperateTitle div
+{
+    color: #000000;
+    float: left;
+    font-weight:bold;
+    padding: 10px 20px;
+}
+
+
+
+.cpwd p span
+{
+    float: left;
+    font-size: 14px;
+    text-align: right;
+    width: 200px;
+}
+
+.cpwd p input
+{
+    border: 1px solid #BBBBBB;
+    height: 16px;
+    margin-left: 20px;
+    margin-top: -5px;
+    padding: 4px 3px;
+    width: 150px;
+}
+.btns
+{
+    padding-left:230px;
+}
+

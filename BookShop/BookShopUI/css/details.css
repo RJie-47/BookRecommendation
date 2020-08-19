@@ -1,0 +1,261 @@
+﻿#content #bookdetails,#content #bookdes,#content #authordes
+{
+    width:760px;
+    overflow:hidden;
+    margin:0 auto;
+    text-align:center;
+    
+}
+
+#content #bookdetails #bookname
+{
+    height:30px;   
+}
+
+#content #bookdetails #bookname h1
+{
+    color: #333333;
+    display: inline;
+    font-size: 16px;
+}
+
+#content #bookdetails #preview
+{
+    float:left;
+    width:280px;
+    height:380px;
+}
+
+#content #bookdetails #preview #spec-n1
+{
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 280px;
+    width: 280px;
+}
+
+#content #bookdetails #preview #spec-n1 img
+{
+    vertical-align:middle;
+    height:280px;
+    width:280px;
+}
+
+#content #bookdetails #descript
+{
+    float:left;
+    width:480px;
+    height:380px;
+}
+
+#content #bookdetails #descript #bprice,#content #bookdetails #descript #choose
+{
+    width:480px;
+    height:30px;
+}
+
+#content #bookdetails #descript #summary
+{
+   
+    border-top: 1px solid #CCCCCC;
+    color: #333333;
+    float: right;
+    position: relative;
+    width: 480px;
+    padding-top:10px;
+    text-align:left;
+    height:110px;    
+}
+
+#content #bookdetails #descript #summary li
+{
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+#content #bookdetails #descript #summary li span
+{
+    float: left;
+    text-align: right;
+    width: 60px;
+}
+#content #bookdetails #descript #bprice
+{
+    
+    
+    width: 480px;
+    text-align:left;
+    margin-bottom:20px;
+    height:40px;
+    float:left;
+    
+}
+
+#content #bookdetails #descript #bprice li
+{
+    padding:4px 0;
+   
+}
+#content #bookdetails #descript #bprice li span.sold_dis
+{
+    color:Red;
+    font-size:13px;
+    font-family:Verdana;
+}
+#content #bookdetails #descript #bprice li span.sold_price
+{
+       color:#ef0000;
+    font-weight:bold;
+    font-size:13px;
+    font-family:Verdana;
+}
+
+#content #bookdetails #descript #choose
+{
+    
+    background: #FFFCEB none repeat scroll 0 0;
+    border: 1px solid #EED97C;
+    color: #666666;
+    float: left;
+    overflow: visible;
+    width: 476px;   
+    height:120px;
+    
+}
+
+#content #bookdetails #descript #choose dl
+{
+    border-bottom: 1px dotted #EED97C;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#content #bookdetails #descript #choose .amount dt
+{
+    line-height:22px;
+    float:left; 
+    margin-top:5px;
+}
+#content #bookdetails #descript #choose .amount dd
+{
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    width: 32px;
+    text-align:left;
+    height: 32px;
+    line-height:32px;
+   
+    
+}
+
+#content #bookdetails #descript #choose .amount dd.ben
+{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 32px;
+    line-height: 22px;
+    padding: 0 3px;
+    margin-top: 5px;
+}
+
+#content #bookdetails #descript #choose .amount dd input
+{
+    border: 1px solid #989898;
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+}
+#content #bookdetails #descript #choose .amount dd a
+{
+    background: #FFFFFF none repeat scroll 0 0;
+    float: left;
+    margin-top:5px;
+}
+#content #bookdetails #descript #choose .amount dd a:link, #content #bookdetails #descript #choose .amount dd a:visited
+{
+    border: 1px solid #DBDBDB;
+    display: block;
+    font-family: arial;
+    height: 13px;
+    line-height: 13px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 3px;
+    width: 13px;
+}
+
+#content #bookdetails #descript #choose .amount dd a.reduce
+{
+    left:0;
+}
+
+#content #bookdetails #descript #choose .amount dd a.add
+{
+    
+    right:0;
+}
+
+
+#content #bookdetails #descript #choose .btns
+{
+    overflow: visible;
+    padding: 10px;
+}
+
+#content #bookdetails #descript #choose .btns .btn_append
+{
+    background-image: url(../images/btn_new.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    background-position: 0 0;
+    display: block;
+    height: 40px;
+    line-height: 100px;
+    margin-right: 5px;
+    width: 138px;
+}
+
+
+
+#content #bookdes
+{
+     overflow:hidden;
+}
+#content #bookdes .mt
+{
+    background: transparent url(../images/bg_hotsale.gif) repeat-x scroll 0 -552px;
+    color: #CC0000;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px 8px;
+    text-align:left;
+}
+#content #bookdes .mt h2
+{
+    font-size:14px;
+}
+
+#content #bookdes .mc
+{
+    padding:0 10px 10px;
+    overflow:hidden;
+}
+
+#content #bookdes .mc .con
+{
+    line-height:18px;
+    text-align:left;
+}
+
+
+

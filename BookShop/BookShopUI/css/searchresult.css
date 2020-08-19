@@ -1,0 +1,361 @@
+﻿#content #filter,#content .pagenation,#content #booklist
+{
+    width:760px;
+   
+}
+#content #filter
+{
+    height:25px;
+    border-bottom: 2px solid #CCCCCC;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    
+}
+
+#content #filter .fore
+{
+    height: 24px;
+    line-height: 24px;
+    padding: 0 0 0 10px;
+    float: left;
+}
+#content #filter .orderitem
+{
+    overflow: hidden;
+    float: left;
+    padding: 0 5px;
+}
+#content #filter .orderitem li
+{
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    background: #CCCCCC url(../images/bg_btn.jpg) no-repeat scroll right -24px;
+    height: 23px;
+    margin-right: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+#content #filter .orderitem li b
+{
+    background-image: url(../images/bg_icon.gif);
+    background-repeat: no-repeat;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    width: 7px;
+    z-index: 2;
+    background-position: -65px -37px;
+}
+#content #filter .orderitem li span
+{
+    background: transparent url(../images/bg_btn.jpg) no-repeat scroll 0 -24px;
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    z-index: 1;
+}
+
+#content #filter .orderitem li a
+{
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 12px 0 10px;
+    position: relative;
+    z-index: 2;
+    padding-right: 19px;
+}
+
+span.clr
+{
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+#content .pagenation
+{
+    margin-bottom:10px;  
+    height:40px; 
+   
+}
+#content .pagenation .pagein
+{
+    float: right;
+    height: 14px;
+    line-height: 14px;
+    padding-top: 3px;
+    padding-left: 12px;
+}
+
+#content .pagenation .pagein a
+{
+    color: #005AA0;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+
+#content .pagenation .pagein .prev-disabled
+{
+    height: 14px;
+    line-height: 14px;
+    padding-top: 3px;
+    padding-left: 12px;
+    color: #CCCCCC;
+    cursor: default;
+    position: relative;
+    font-size: 12px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+
+#content .pagenation .pagein .prev-disabled b
+{
+    background-position: -80px -608px;
+    left: 3px;
+    top: 5px;
+    background-image: url(../images/bg_hotsale.gif);
+    background-repeat: no-repeat;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    width: 5px;
+}
+#content .pagenation .pagein .current
+{
+    color: #FF6600;
+    font-weight: bold;
+    border: medium none;
+    padding: 4px 11px;
+    border: medium none;
+    padding: 4px 11px;
+    float: left;
+}
+
+#content .pagenation .pagein .text
+{
+    border: medium none;
+    padding: 4px 11px;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    float: left;
+    margin-left: 2px;
+    overflow: hidden;
+}
+
+#content .pagenation .pagein .next
+{
+    height: 14px;
+    line-height: 14px;
+    padding-top: 3px;
+    padding-right: 12px;
+    position: relative;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+#content #booklist
+{
+    overflow:hidden;
+    margin-bottom: 10px;
+   
+    
+}
+
+#content #booklist .bookitem
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 8px 0px 8px 15px;
+    width: 760px;
+    
+}
+
+#content #booklist .bookitem .bookimg
+{
+    
+    height: 134px;
+    margin: 0 auto 8px;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 98px;
+    float: left;
+    margin-bottom: 0;
+    background: transparent url(../images/book_shadow.jpg) no-repeat scroll 0 120px;
+    
+}
+
+#content #booklist .bookitem .bookimg a:link, #content #booklist .bookitem .bookimg a:visited
+{
+    display: block;
+    height: 130px;
+    overflow: hidden;
+    width: 94px;
+}
+
+#content #booklist .bookitem .bookimg .i_img
+{
+    background: #FFFFFF none repeat scroll 0 0;
+    border: 1px solid #CCCCCC;
+    height: 130px;
+    overflow: hidden;
+    padding: 1px;
+    width: 94px;
+}
+
+#content #booklist .bookitem .bookimg .i_img a img
+{
+    width:130px;
+    height:130px;
+    margin-left:-18px;
+}
+
+#content #booklist .bookitem dl
+{
+    float:right;
+    width:625px;
+    height:134px;
+}
+
+#content #booklist .bookitem dl .bname
+{
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 7px;
+    
+    
+}
+
+#content #booklist .bookitem dl .bname a:link,#content #booklist .bookitem dl .bname a:visited
+{
+    color:#666666;
+}
+
+#content #booklist .bookitem .pinfo
+{
+    width:610px;
+    height:20px;
+    color:#666666;
+}
+
+#content #booklist .bookitem .pinfo .ptitle
+{
+    float:left;
+    width:60px;
+    height:20px;
+    color:#666666;
+}
+
+#content #booklist .bookitem .pinfo .pnote
+{
+    float:left;
+    width:540px;
+    height:20px;
+    color:#005AA0;
+    
+}
+#content #booklist .bookitem .pinfo .mark_price
+{
+    float:left;
+    width:160px;
+    color:#666666;
+    
+}
+
+#content #booklist .bookitem .pinfo .mark_price del
+{
+    text-decoration:line-through;
+    padding-left:18px;
+}
+
+#content #booklist .bookitem .pinfo .sold_price
+{
+    color:#ef0000;
+    font-weight:bold;
+    font-size:13px;
+    font-family:Verdana;
+}
+#content #booklist .bookitem .pinfo .sold_dis
+{
+    color:Red;
+    font-size:13px;
+    font-family:Verdana;
+}
+#content #booklist .bookitem .btns
+{
+    margin-top:7px;
+}
+
+#content #booklist .bookitem .btns .btnappend
+{
+    background: url("../images/button_buy.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 25px;
+    line-height: 100px;
+    margin-right: 10px;
+    width: 88px;
+    cursor: pointer;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+#content #booklist .bookitem .btns .btn-coll
+{
+    border: 0 none;
+    cursor: pointer;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    background: #CCCCCC url(../images/button_detail.png) no-repeat scroll 0 0;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    padding: 0 0 2px 20px;
+    width: 54px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

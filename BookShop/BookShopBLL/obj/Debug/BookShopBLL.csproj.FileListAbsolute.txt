@@ -1,0 +1,10 @@
+G:\net\bookshop\BookShop\BookShopBLL\bin\Debug\BookShopBLL.dll
+G:\net\bookshop\BookShop\BookShopBLL\bin\Debug\BookShopBLL.pdb
+G:\net\bookshop\BookShop\BookShopBLL\bin\Debug\BookShopDAL.dll
+G:\net\bookshop\BookShop\BookShopBLL\bin\Debug\BookShopDAL.pdb
+G:\net\bookshop\BookShop\BookShopBLL\bin\Debug\BookShopDAL.dll.config
+G:\net\bookshop\BookShop\BookShopBLL\obj\Debug\BookShopBLL.csprojAssemblyReference.cache
+G:\net\bookshop\BookShop\BookShopBLL\obj\Debug\BookShopBLL.csproj.CoreCompileInputs.cache
+G:\net\bookshop\BookShop\BookShopBLL\obj\Debug\BookShopBLL.csproj.CopyComplete
+G:\net\bookshop\BookShop\BookShopBLL\obj\Debug\BookShopBLL.dll
+G:\net\bookshop\BookShop\BookShopBLL\obj\Debug\BookShopBLL.pdb

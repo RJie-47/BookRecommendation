@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="mydb" Class="BookShopLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\net\bookshop\BookShop\BookShopUI\App_Data\mydb.mdf;Integrated Security=True" SettingsObjectName="BookShopDAL.Properties.Settings" SettingsPropertyName="mydbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AddressBook" Member="AddressBook">
+    <Type Name="AddressBook">
+      <Column Name="AddressID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserEmail" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ConsigneePerson" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ConsigneeAddress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ConsigneeTel" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDefault" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="AddressBook_OrderInfo" Member="OrderInfo" ThisKey="AddressID" OtherKey="AddressID" Type="OrderInfo" />
+      <Association Name="UserInfo_AddressBook" Member="UserInfo" ThisKey="UserEmail" OtherKey="UserEmail" Type="UserInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AdminList" Member="AdminList">
+    <Type Name="AdminList">
+      <Column Name="AdminID" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdminPass" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="AdminName" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="AdminList_Announcement" Member="Announcement" ThisKey="AdminID" OtherKey="AdminID" Type="Announcement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Announcement" Member="Announcement">
+    <Type Name="Announcement">
+      <Column Name="AnnounceMentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdminID" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AnnounceTitle" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AnnounceContent" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="AnnounceDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="AdminList_Announcement" Member="AdminList" ThisKey="AdminID" OtherKey="AdminID" Type="AdminList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookCategory" Member="BookCategory">
+    <Type Name="BookCategory">
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BookCategory_BookCategory" Member="BookCategory2" ThisKey="CategoryID" OtherKey="ParentID" Type="BookCategory" />
+      <Association Name="BookCategory_BookInfo" Member="BookInfo" ThisKey="CategoryID" OtherKey="CategoryID" Type="BookInfo" />
+      <Association Name="BookCategory_BookCategory" Member="BookCategory1" ThisKey="ParentID" OtherKey="CategoryID" Type="BookCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookInfo" Member="BookInfo">
+    <Type Name="BookInfo">
+      <Column Name="BookID" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BookSmallImageName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="BookBigImage" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="BookAuthor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="BookPublisher" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BookPublishDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BookISBN" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="BookDescription" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="BookMarketPrice" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="BookDiscount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookSoldPrice" Type="System.Decimal" DbType="Money" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="BookInfo_OrderItem" Member="OrderItem" ThisKey="BookID" OtherKey="BookID" Type="OrderItem" />
+      <Association Name="BookCategory_BookInfo" Member="BookCategory" ThisKey="CategoryID" OtherKey="CategoryID" Type="BookCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderInfo" Member="OrderInfo">
+    <Type Name="OrderInfo">
+      <Column Name="OrderNo" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OrderAmount" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountAmount" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Association Name="OrderInfo_OrderItem" Member="OrderItem" ThisKey="OrderNo" OtherKey="OrderNo" Type="OrderItem" />
+      <Association Name="AddressBook_OrderInfo" Member="AddressBook" ThisKey="AddressID" OtherKey="AddressID" Type="AddressBook" IsForeignKey="true" />
+      <Association Name="OrderStatus_OrderInfo" Member="OrderStatus" ThisKey="StatusID" OtherKey="StatusID" Type="OrderStatus" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderItem" Member="OrderItem">
+    <Type Name="OrderItem">
+      <Column Name="OrderNo" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Discount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoldPrice" Type="System.Decimal" DbType="Money" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="BookInfo_OrderItem" Member="BookInfo" ThisKey="BookID" OtherKey="BookID" Type="BookInfo" IsForeignKey="true" />
+      <Association Name="OrderInfo_OrderItem" Member="OrderInfo" ThisKey="OrderNo" OtherKey="OrderNo" Type="OrderInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderStatus" Member="OrderStatus">
+    <Type Name="OrderStatus">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="OrderStatus_OrderInfo" Member="OrderInfo" ThisKey="StatusID" OtherKey="StatusID" Type="OrderInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserInfo" Member="UserInfo">
+    <Type Name="UserInfo">
+      <Column Name="UserEmail" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserPass" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="UserTel" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Association Name="UserInfo_AddressBook" Member="AddressBook" ThisKey="UserEmail" OtherKey="UserEmail" Type="AddressBook" />
+    </Type>
+  </Table>
+</Database>

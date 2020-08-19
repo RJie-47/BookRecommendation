@@ -1,0 +1,56 @@
+﻿body 
+{
+    font-size:12px;
+}
+a img
+{
+    border:0;
+}
+.OperateTitle
+{
+    background: transparent url(../images/labelbg.gif) repeat scroll 0 0;
+    height: 36px;
+}
+.OperateTitle div
+{
+    color: #000000;
+    float: left;
+    font-weight:bold;
+    padding: 10px 20px;
+}
+
+.manage
+{
+    border-bottom: 1px solid #CCCCCC;
+    color: #4B6888;
+    padding: 3px 25px;
+}
+
+.manage a
+{
+    margin-right:3px;
+    font-size:12px;
+}
+.gw_shwzl_div
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#maincontainer .gw2 #divUserAddress .required
+{
+   color:Red;
+}
+
+
+
+
+#divUserAddress p.address input
+{  
+    width:430px;
+}
+
+#divUserAddress p.btns 
+{
+    padding-left:130px;
+}

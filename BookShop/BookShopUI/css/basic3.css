@@ -1,0 +1,50 @@
+﻿
+#maincontainer #gw_top
+{
+    background: transparent url(../images/cart_04.jpg) repeat-x scroll 0 0;
+    height: 43px;
+    width: 980px;
+}
+
+#maincontainer #gw_top .gw_top_left
+{
+    float: left;
+    text-align: left;
+    width: 380px;
+}
+#maincontainer #gw_top .gw_top_left2
+{
+    float: left;
+    width: 380px;
+}
+
+#maincontainer #gw_top .gw_top_left2 ul li
+{
+    float:left;
+padding-right:15px;
+}
+#maincontainer #gw_top .gw_top_left3 img,#maincontainer #gw_top .gw_top_left4 img
+{
+    padding-top:12px;
+}
+#maincontainer #gw_top .arrow
+{
+    width:58px;
+    height:43px;
+}
+#maincontainer #gw_top .gw_top_left4 img
+{
+    width:10px;
+    height:11px;
+}
+
+#maincontainer #gw_top .last img
+{
+    width:60px;
+    height:43px;
+}
+
+#maincontainer #gw_top .gw_top_right
+{
+    float:right;
+}

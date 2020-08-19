@@ -1,0 +1,164 @@
+﻿body 
+{
+    font-size:12px;
+}
+.OperateTitle
+{
+    background: transparent url(../images/labelbg.gif) repeat scroll 0 0;
+    height: 36px;
+}
+
+.OperateTitle div
+{
+    color: #000000;
+    float: left;
+    font-weight:bold;
+    padding: 10px 20px;
+}
+a:link,a:visited
+{
+    color:#1A66B3;
+    text-decoration:none;
+}
+table
+{
+    
+    text-align:center;
+     border-collapse:collapse;
+}
+
+table thead tr
+{
+    background: transparent url(../images/listbg.gif) repeat scroll 0 0;
+    
+    color: #000000;
+    font-weight: bold;
+}
+table td,table th
+{
+    border:1px solid #CCCCCC;
+}
+table tbody td
+{
+    height:24px;
+   
+}
+.orderno
+{
+    width:150px;
+}
+.ordersent,.orderstatus
+{
+    width:140px;
+}
+.orderamount,.disamount
+{
+    width:111px;
+}
+
+
+.orderdate
+{
+    width:120px;
+}
+
+.searchdiv
+{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background: #F7F7F7 none repeat scroll 0 0;
+    border: 1px solid #EEEEEE;
+    padding: 10px 20px;
+}
+
+.searchdiv input
+{
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    height: 19px;
+    width:80px;
+}
+
+
+
+.searchdiv span
+{
+    margin-left:5px;
+}
+
+#pages
+{
+   
+    height: 33px;
+    line-height: 33px;
+    padding-right: 10px;
+    text-align: right;
+    width: 40%;
+    padding-top:13px;
+    float:right;
+}
+
+#pages .hlfir
+{
+    background: transparent url(../images/hlfir.jpg) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 13px;
+    margin: 0 10px;
+    width: 18px;
+}
+
+#pages .hlp
+{
+    background: transparent url(../images/hlp.jpg) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 13px;
+    margin: 0 10px;
+    margin-left:10px;
+    width: 12px;
+}
+
+#pages .hln
+{
+background:transparent url(../images/hln.jpg) no-repeat scroll 0 0;
+display:inline-block;
+height:13px;
+margin:0 10px;
+width:12px;
+}
+
+#pages .hlla
+{
+    background: transparent url(../images/hlla.jpg) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 13px;
+    margin: 0 10px;
+    width: 18px;
+}
+
+#pages .current
+{
+    color:#008AD2;
+}
+#pages .allpages
+{
+    color: #434343;
+    line-height: 33px;
+    text-align: right;
+}
+
+.amount
+{
+    text-align:right;
+    margin-top:10px;
+    margin-right:15px;
+}
+.amount span
+{
+    padding-left:5px;
+}
+.amount .money
+{
+    color:#CC3300;
+    font-family:Arial;
+    font-weight:bold;
+}

@@ -1,0 +1,166 @@
+﻿/*
+      Created by CSS Portal Layout Generator
+	  
+	  http://www.cssportal.com
+	  	  
+*/
+
+* { padding: 0; margin: 0; }
+
+body {
+ font-size: 12px;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+a:link,a:visited
+{
+    text-decoration:none;
+    color:Black;
+}
+a img
+{
+    border:0;
+}
+h2
+{
+    font-size:14px;
+}
+
+p {
+ padding: 10px;
+}
+
+del
+{
+    text-decoration:line-through;
+    
+}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 980px;
+}
+
+
+
+#header {
+ color: #333;
+ width: 980px;
+ float: left;
+ height: 80px;
+
+ margin-bottom:10px;
+}
+
+#header #headerl
+{
+    float:left;
+    height: 80px;
+}
+#header #headerr
+{
+    float:right;
+    height: 80px;
+    width:700px;
+    
+}
+
+#header #headerr #headnav
+{
+    width:700px;
+    height:30px;
+    
+    
+}
+
+#header #headerr #headnav ul li
+{
+    float:right;
+    margin-right:25px;
+    margin-top:13px;
+}
+#header #headerr #searchbox
+{
+    width:450px;
+    height:25px;
+    float:right;
+    padding:3px 4px 0;
+    border:1px solid #E3E3E3;
+    background:transparent url(../images/search_bg.gif) repeat-x scroll 0 0;
+    margin-top:20px;
+   
+}
+#header #headerr #searchbox input
+{
+    float:left;
+    margin-right:4px;
+}
+#header #headerr #searchbox .searchtext
+{
+    padding:2px; 
+}
+
+#maincontainer
+{
+    width:980px;
+    float:left;
+    margin-top:10px;
+  
+}
+
+#navigation {
+ float: left;
+ width: 980px;
+ height: 51px;
+ color: #333;
+ margin-bottom:10px;
+ margin:auto;
+}
+#navigation div
+{
+    float:left;
+}
+#navigation div#navcontent
+{
+    background: transparent url(../images/menu_bg.gif) repeat-x scroll 0 0;
+    color: #FFFFFF;
+    float: left;
+    height: 51px;
+    line-height: 40px;
+    text-align: center;
+    width: 968px;
+}
+
+a.nav:link, a.nav:visited, a.nav:hover {
+color:#FFFFFF;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+
+
+#footer { 
+ width: 980px;
+ height: 58px;
+ clear: both;
+ float:left;
+ margin:0 auto;
+ text-align:center;
+ margin-top:20px;
+}
+
+#content { 
+ float: left;
+ color: #333;
+ background: white;
+ width: 760px;
+ display: inline;
+}
+
+#maincontainer{
+	min-height: 300px;
+}
+

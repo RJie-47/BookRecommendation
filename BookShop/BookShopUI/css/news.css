@@ -1,0 +1,39 @@
+﻿#content
+{
+    width:754px;
+    border:1px solid #EBEBEB;
+    margin:0 auto;
+    text-align:center;
+}
+#detail .mt h1
+{
+    margin-top:20px;
+    font-family:"microsoft yahei",宋体;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size:20px;
+}
+
+#detail .mt .date
+{
+    text-align: center;
+    color:#999999;
+}
+
+#detail .mt .extra
+{
+    height:10px;
+    width:660px;
+    border-top:1px solid #EBEBEB;
+}
+
+#detail .mc
+{
+    font-size: 14px;
+    line-height: 2em;
+    padding: 30px 10px;
+    text-align:left;
+}
+
